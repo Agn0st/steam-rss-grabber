@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Steam RSS Grabber",
+  "version": "0.1.0",
+  "description": "Copy a game's RSS feed using the Steam page language.",
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["https://store.steampowered.com/app/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

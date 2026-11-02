@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+playwright-report/
+.DS_Store
+IDEA.md
+docs/RELEASE-v0.1.0.md
+docs/IMAGES.md
+tests/content.spec.js
+package-lock.json
+package.json
+playwright.config.js
