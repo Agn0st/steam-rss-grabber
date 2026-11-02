@@ -1,6 +1,6 @@
 # Steam RSS Grabber
 
-**Steam game RSS news — in one click.** A lightweight Google Chrome extension that adds a **Copy RSS** button to a game's page and copies the link to its RSS feed to the clipboard.
+🇬🇧 EN: **Steam game RSS news — in one click.** A lightweight Google Chrome extension that adds a **Copy RSS** button to a game's page and copies the link to its RSS feed to the clipboard.
 
 No need to find RSS feeds manually: open a game, click the button, and add the link to your RSS reader.
 
@@ -51,7 +51,7 @@ If you download the repository's source code instead of the release ZIP, select 
 4. Drag the .crx file into the browser window.
 5. In the pop-up window, click "Add extension".
 
-**Chrome may block CRX installation outside the Chrome Web Store**, so ZIP and **Load unpacked** are the recommended method. 
+**Chrome may block CRX installation outside the Chrome Web Store**, so ZIP and **Load unpacked** are the recommended method.
 
 If you see the error **Package is invalid: 'CRX_REQUIRED_PROOF_MISSING'.**, reload the page after enabling developer mode.
 
@@ -84,9 +84,8 @@ extension/
 
 ---
 
-# Steam RSS Grabber
 
-**RSS-новини гри Steam — одним натисканням.** Невелике розширення для Google Chrome, яке додає кнопку **Copy RSS** на сторінку гри та копіює посилання на її RSS-стрічку в буфер обміну.
+🇺🇦 UA: **RSS-новини гри Steam — одним натисканням.** Невелике розширення для Google Chrome, яке додає кнопку **Copy RSS** на сторінку гри та копіює посилання на її RSS-стрічку в буфер обміну.
 
 Без пошуку RSS вручну: відкрий гру, натисни кнопку й додай посилання у свій RSS-рідер.
 
@@ -137,7 +136,7 @@ https://store.steampowered.com/feeds/news/app/[game_id]
 4. Перетягни файл .crx у вікно браузеру.
 5. У вспливаючому вікні натисни "Додати розширення".
 
-**Chrome може блокувати встановлення CRX поза Chrome Web Store**, тому ZIP і **Load unpacked** — рекомендований спосіб. 
+**Chrome може блокувати встановлення CRX поза Chrome Web Store**, тому ZIP і **Load unpacked** — рекомендований спосіб.
 
 Якщо ви бачите помилку **Package is invalid: 'CRX_REQUIRED_PROOF_MISSING'.**, то після включення режиму розробника потрібно оновити сторінку.
 
