@@ -1,83 +1,99 @@
-![Steam RSS Grabber](https://shieldcn.dev/header/glow.svg?title=Steam+RSS+Grabber&subtitle=Steam+game+RSS+news+%E2%80%94+in+one+click&logo=rss&logoColor=e74e9a&mode=dark&theme=slate&font=space-grotesk&image=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1607706189992-eae578626c86%3Fq%3D80%26w%3D1740%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.1.0%26ixid%3DNHwxMjA3fDA%253D)
+<p align="center">
+  <img src="https://shieldcn.dev/header/glow.svg?title=Steam+RSS+Grabber&amp;subtitle=Steam+game+RSS+news+%E2%80%94+in+one+click&amp;logo=rss&amp;logoColor=e74e9a&amp;mode=dark&amp;theme=slate&amp;font=space-grotesk&amp;image=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1607706189992-eae578626c86%3Fq%3D80%26w%3D1740%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.1.0%26ixid%3DNHwxMjA3fDA%253D" alt="Steam RSS Grabber" width="100%">
+</p>
 
-**Steam game RSS news — in one click.** A lightweight Google Chrome extension that adds a **Copy RSS** button to a game's page and copies the link to its RSS feed to the clipboard.
+<p align="center">
+  <b>English</b> · <a href="README.uk.md">Українська</a> · <a href="README.es.md">Español</a>
+</p>
 
-No need to find RSS feeds manually: open a game, click the button, and add the link to your RSS reader.
+<p align="center">
+  <strong>Follow any Steam game's news in your RSS reader.</strong><br>
+  A Chrome extension that adds a <b>Copy RSS</b> button next to <b>Share</b> on Steam game pages.
+</p>
 
+<p align="center">
+  <img alt="Steam game news" src="https://img.shields.io/badge/Steam-Game%20News-1B2838?style=flat-square&amp;logo=steam&amp;logoColor=white">
+  <img alt="One-click RSS copy" src="https://img.shields.io/badge/RSS-One--click%20copy-555555?style=flat-square&amp;labelColor=EE802F&amp;logo=rss&amp;logoColor=white">
+  <img alt="Google Chrome" src="https://img.shields.io/badge/Google%20Chrome-4285F4?style=flat-square&amp;logo=googlechrome&amp;logoColor=white">
+  <a href="https://github.com/Agn0st/steam-rss-grabber/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Agn0st/steam-rss-grabber?style=flat-square&amp;label=Release&amp;color=7C3AED"></a>
+  <img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-2563EB?style=flat-square">
+</p>
 
-## Features
+<p align="center">
+  <img alt="No tracking" src="https://img.shields.io/badge/Privacy-No%20tracking-6B7280?style=flat-square">
+  <img alt="No Steam account required" src="https://img.shields.io/badge/Account-Not%20required-6B7280?style=flat-square">
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/License-MIT-6B7280?style=flat-square"></a>
+</p>
 
-- **RSS for a specific game**, rather than Steam's general feed.
-- **Copy RSS** to the left of the “Share” button — whether you are signed in to Steam or not.
-- The button uses Steam's existing styles.
-- After copying, **Copied** appears for one second. If copying fails, **Copy failed** appears.
-- The RSS language follows the Steam page language; English is used for unknown languages. The availability of translated news depends on the publisher and Steam.
-- Works only on `https://store.steampowered.com/app/*` pages.
+<p align="center">
+  <a href="https://github.com/Agn0st/steam-rss-grabber/releases/latest"><img alt="Download from GitHub Releases" src="https://shieldcn.dev/badge/Download-Release-E74E9A.svg?size=sm"></a>
+</p>
 
-## Usage
+<p align="center">
+  <a href="#installation">Installation</a> · <a href="#usage">Usage</a> · <a href="#how-it-works">How it works</a> · <a href="#permissions-and-privacy">Privacy</a>
+</p>
 
-1. Open the desired game's page in the Steam store.
-2. Click **Copy RSS** to the left of the “Share” button.
-3. When **Copied** appears, paste the link into your RSS reader.
-
-Example link format:
-
-```text
-https://store.steampowered.com/feeds/news/app/[game_id]
-```
-
-The extension only copies the URL. Your RSS reader handles subscriptions, feed updates, and notifications.
+<p align="center">
+  <img src="docs/images/screen.png" width="600" alt="The Copy RSS button next to Share on a Steam game page">
+  <br>
+  <sub>Example on a Steam game page while signed out.</sub>
+</p>
 
 ## Installation
 
-### Recommended: ZIP / unpacked extension
+1. Download the extension ZIP from [GitHub Releases](https://github.com/Agn0st/steam-rss-grabber/releases/latest) and extract it.
+2. Open `chrome://extensions` in Google Chrome and turn on **Developer mode**.
+3. Click **Load unpacked** and select the extracted `extension` folder containing `manifest.json`.
+4. Open or reload a Steam game page.
 
-1. Download `steam-rss-grabber-0.1.0.zip` from the [releases page](https://github.com/Agn0st/steam-rss-grabber/releases) and extract the archive to a permanent folder.
-2. Open `chrome://extensions` in Google Chrome.
-3. Enable **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the **`extension`** folder from the extracted archive — the one containing `manifest.json`.
-6. Open or reload a Steam game page.
+You can also load the [`extension/`](extension/) folder from a clone or source archive. Chrome loads the files directly. Keep the folder in place and use the reload button on `chrome://extensions` after replacing its files.
 
-Important: Do not delete or move the `extension` folder after installation: Chrome loads the files from it. After replacing the files with a new version, click the extension's reload button in `chrome://extensions` and reload the game page.
+## Usage
 
-If you download the repository's source code instead of the release ZIP, select its `extension` folder in the same way. No build step or `npm install` is required for installation.
+1. Open a game's Steam store page.
+2. Click **Copy RSS** next to **Share**.
+3. When the button says **Copied**, paste the URL into your RSS reader.
 
-### Optional: CRX
+A copied URL includes the Steam app ID and the feed language. For example:
 
-1. Download `steam-rss-grabber-0.1.0.crx` from the [releases page](https://github.com/Agn0st/steam-rss-grabber/releases).
-2. Open `chrome://extensions` in Google Chrome.
-3. Enable **Developer mode**.
-4. Drag the .crx file into the browser window.
-5. In the pop-up window, click "Add extension".
+```text
+https://store.steampowered.com/feeds/news/app/620/?l=english
+```
 
-**Chrome may block CRX installation outside the Chrome Web Store**, so ZIP and **Load unpacked** are the recommended method.
+> [!NOTE]
+> Your RSS reader handles subscriptions, updates, and notifications. Steam and the game's publisher determine which news items and translations are available.
 
-If you see the error **Package is invalid: 'CRX_REQUIRED_PROOF_MISSING'.**, reload the page after enabling developer mode.
+<br>
+
+## How it works
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><h3>📡 One feed per game</h3><p>The extension uses the app ID in the store URL to build the RSS link for that game.</p></td>
+    <td width="50%" valign="top"><h3>📋 One-click copy</h3><p>The button uses Steam's styling and briefly shows <b>Copied</b> or <b>Copy failed</b> after a click.</p></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><h3>🌐 Follows the page language</h3><p>The RSS link requests the Steam page's language. Unknown locales fall back to English.</p></td>
+    <td width="50%" valign="top"><h3>👤 Works signed out</h3><p>The button appears beside Share on supported game pages, including when you're signed out.</p></td>
+  </tr>
+</table>
 
 ## Permissions and privacy
 
-- **`clipboardWrite`** is required to write the RSS link to the clipboard after you click the button.
-- The script runs only on the specified Steam app pages.
-- The extension's code does not read the clipboard, collect analytics, or send data to third-party servers.
-- No Steam account is required to copy the link.
+The extension runs only on `https://store.steampowered.com/app/*`. It uses
+`clipboardWrite` to copy the feed URL when you click **Copy RSS**. It does not
+read the clipboard, collect analytics, or make network requests.
 
-## Limitations
+## Compatibility
 
-- The target browser is **Google Chrome**
-- The button depends on Steam's page structure. If Steam changes its markup, the integration may need to be updated.
-- The extension does not add news translations or affect RSS availability on Steam's side.
+Steam RSS Grabber targets Google Chrome. The button depends on Steam's store
+page markup and appears when the **Share** control is available.
 
-## Development and testing
+## Project layout
 
-Manifest V3, JavaScript
-
-```text
-extension/
-  manifest.json       # Chrome metadata and permissions
-  content.js          # Button and RSS copying
-```
+- [`extension/manifest.json`](extension/manifest.json) declares Manifest V3, the page scope, and clipboard permission.
+- [`extension/content.js`](extension/content.js) adds the button and builds the RSS URL.
 
 ## License
 
-[MIT](LICENSE). An unofficial project, not affiliated with Valve or Steam.
+[MIT](LICENSE). Steam RSS Grabber is an unofficial project independent of Valve and Steam.
